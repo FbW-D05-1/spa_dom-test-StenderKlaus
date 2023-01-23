@@ -24,7 +24,14 @@
         <button>Click here to get attributes</button>
 
         <script>
-            // ???
+            document.querySelector("button").addEventListener(`click`, function () {
+            const firstLink = document.querySelector("a");
+            console.log("href:",firstlink.href);
+            console.log("hreflang:",firstlink.hreflang);
+            console.log("rel:", firstlink.rel);
+            console.log("target",firstlink.target);
+            console.log("type:",firstlink.type);
+            })
         </script>
     </body>
 

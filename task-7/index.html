@@ -15,7 +15,10 @@
         </form>
 
         <script>
-            // ???
+  document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault()
+            alert(`Volume = ${Math.pow(parseInt(document.querySelector('input').value) , 3) * Math.PI * (4/3) }`)
+        })
         </script>
     </body>
 

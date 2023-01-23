@@ -20,7 +20,12 @@
         </form>
 
         <script>
-            // ???
+            document.querySelector('form').addEventListener('submit', function (event) {
+            event.preventDefault();
+        document.querySelectorAll('input').forEach(input =>{
+        console.log(input.value)
+    })
+})
         </script>
     </body>
 

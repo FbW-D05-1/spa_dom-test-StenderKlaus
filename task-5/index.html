@@ -22,7 +22,20 @@
         </table>
         <button>Calculate new column</button>
         <script>
-            // ???
+            const button = document.querySelector("button");
+      button.addEventListener("click", () => {
+        const rows = document.querySelectorAll("tr");
+        rows.forEach((row) => {
+          let sum = 0;
+          const cells = row.querySelectorAll("td");
+          cells.forEach((cell) => {
+            sum += parseInt(cell.textContent);
+          });
+          const newCell = document.createElement("td");
+          newCell.textContent = sum;
+          row.appendChild(newCell);
+        });
+      });
         </script>
     </body>
 
