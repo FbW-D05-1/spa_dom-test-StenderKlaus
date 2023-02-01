@@ -15,8 +15,17 @@
         </div>
 
         <script>
-           // ?
-        </script>
+           const inputs = document.querySelectorAll("input");
+            inputs.forEach(function (input) {
+                input.addEventListener("focus", function () {
+                input.style.border = "5px solid red";
+                });
+            
+            input.addEventListener("blur", function () {
+                input.style.border = "";
+            });
+            });
+                </script>
     </body>
 
 </html>
